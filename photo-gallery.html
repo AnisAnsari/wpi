@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WPI - Photo Gallery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   <!-- Spinner Start -->
+   <div
+   id="spinner"
+   class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+ >
+   <div
+     class="spinner-border position-relative text-primary"
+     style="width: 6rem; height: 6rem"
+     role="status"
+   ></div>
+   <img
+     class="position-absolute top-50 start-50 translate-middle"
+     src="img/wpi-icon.png"
+     alt="Icon"
+   />
+ </div>
+ <!-- Spinner End -->
+
+ <!-- Topbar Start -->
+ <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
+   <div class="row gx-0 d-none d-lg-flex">
+     <div
+       class="col-lg-12 text-start h-100 d-inline-flex align-items-center me-3"
+     >
+       <button class="text-dark px-2 btn btn-primary" href="#">
+         Update
+       </button>
+       <marquee
+         behavior="scroll"
+         direction="left"
+         scrollamount="5"
+         class="text-dark"
+       >
+         <span>This is a marquee Update. |</span>
+         <span>It scrolls the content horizontally. |</span>
+         <span
+           >You can customize the animation duration and direction.|</span
+         >
+         <span>Feel free to add more content to the marquee.</span>
+       </marquee>
+     </div>
+   </div>
+ </div>
+ <!-- Topbar End -->
+
+ <!-- Navbar Start -->
+ <nav
+ class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-2 wow fadeIn"
+ data-wow-delay="0.1s"
+>
+ <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+   <h1 class="text-primary m-0">
+     <img class="me-1" src="img/wpi-logo.png" alt="Icon" width="250" />
+   </h1>
+ </a>
+ <button
+   type="button"
+   class="navbar-toggler me-4"
+   data-bs-toggle="collapse"
+   data-bs-target="#navbarCollapse"
+ >
+   <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarCollapse">
+   <div class="navbar-nav ms-auto p-4 p-lg-0">
+     <a href="index.html" class="nav-item nav-link">Home</a>
+     <div class="nav-item dropdown">
+       <a
+         href="#"
+         class="nav-link dropdown-toggle"
+         data-bs-toggle="dropdown"
+         >About Us</a
+       >
+       <div class="dropdown-menu border-0 m-0">
+         <a href="about-party.html" class="dropdown-item">About The Party</a>
+         <a href="party-history.html" class="dropdown-item">Party History</a>
+         <a href="party-idology.html" class="dropdown-item">Party Idology</a>
+         <a href="party-constitution.html" class="dropdown-item">Party Constitution</a>
+       </div>
+     </div>
+     <a href="our-leaders.html" class="nav-item nav-link">Our Leaders</a>
+     <a href="upcoimg-events.html" class="nav-item nav-link">Upcoming Events</a>
+     <a href="join-wpi.html" class="nav-item nav-link">Join WPI</a>
+
+     <div class="nav-item dropdown">
+       <a
+         href="#"
+         class="nav-link dropdown-toggle active"
+         data-bs-toggle="dropdown"
+         >Media Resorces</a
+       >
+       <div class="dropdown-menu border-0 m-0">
+         <a href="press-releases.html" class="dropdown-item ">Press Releases</a>
+         <a href="interview-articles.html" class="dropdown-item">Interview & Articles</a>
+         <a href="speeches.html" class="dropdown-item">Speeches</a>
+         <a href="photo-gallery.html" class="dropdown-item active">Photos Gallery</a>
+         <a href="video-gallery.html" class="dropdown-item">Videos Gallery</a>
+       </div>
+     </div>
+     <a href="contact.html" class="nav-item nav-link">Contact</a>
+   </div>
+   <a href="donate.html" class="btn btn-primary py-2 px-4 d-none d-lg-block"
+     >DONATE</a
+   >
+ </div>
+</nav>
+<!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-1 text-white animated slideInDown">Photo Gallery</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Media Resorces</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Photo Gallery</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Project Start -->
+    <div class="container-xxl project py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <!-- <h4 class="section-title">Our Projects</h4> -->
+                <h1 class="display-5 mb-4">Photo Gallery</h1>
+            </div>
+           
+
+            <!-- previes events  -->
+            <div class="row g-4 wow fadeInUp mt-4" data-wow-delay="0.3s">
+                <div class="col-md-4  mt-4">
+                    <div class="pre-event">
+                      <a href="photo-gallery-details.html">
+                      <div class="">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="" />
+                      </div>
+                      <div class="p-4">
+                        <P class="d-block h5" href=""> Photo Gallery Name</P>                       
+                      </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4  mt-4">
+                  <div class="pre-event">
+                    <a href="photo-gallery-details.html">
+                    <div class="">
+                      <img class="img-fluid" src="img/project-2.jpg" alt="" />
+                    </div>
+                    <div class="p-4">
+                      <P class="d-block h5" href=""> Photo Gallery Name</P>                       
+                    </div>
+                  </a>
+                  </div>
+              </div>
+
+              <div class="col-md-4  mt-4">
+                <div class="pre-event">
+                  <a href="photo-gallery-details.html">
+                  <div class="">
+                    <img class="img-fluid" src="img/project-3.jpg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <P class="d-block h5" href=""> Photo Gallery Name</P>                       
+                  </div>
+                </a>
+                </div>
+            </div>
+
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+        
+
+   <!-- Footer Start -->
+   <div
+   class="container-fluid footer pt-5 px-0 wow fadeIn"
+   data-wow-delay="0.1s"
+ >
+   <div class="container py-5">
+     <div class="row g-5">
+       <div class="col-lg-3 col-md-6">
+         <h3 class="text-light mb-4">Address</h3>
+         <p class="mb-2">
+           <i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street,
+           New Delhi, India
+         </p>
+         <p class="mb-2">
+           <i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890
+         </p>
+         <p class="mb-2">
+           <i class="fa fa-envelope text-primary me-3"></i>info@example.com
+         </p>
+         <div class="d-flex pt-2">
+           <a class="btn btn-square btn-outline-body me-1" href="#"
+             ><i class="fab fa-twitter"></i
+           ></a>
+           <a class="btn btn-square btn-outline-body me-1" href="#"
+             ><i class="fab fa-facebook-f"></i
+           ></a>
+           <a class="btn btn-square btn-outline-body me-1" href="#"
+             ><i class="fab fa-youtube"></i
+           ></a>
+           <a class="btn btn-square btn-outline-body me-0" href="#"
+             ><i class="fab fa-linkedin-in"></i
+           ></a>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h3 class="text-light mb-4">Allied Organs</h3>
+         <a class="btn btn-link" href="press-releases-details.html">Fraternity Movement</a>
+         <a class="btn btn-link" href="press-releases-details.html">Women’s Wing</a>
+         <a class="btn btn-link" href="press-releases-details.html">Steering Committee</a>
+         <a class="btn btn-link" href="press-releases-details.html">Central Election Authority</a>
+         <a class="btn btn-link" href="press-releases-details.html">FITU</a>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h3 class="text-light mb-4">Quick Links</h3>
+         <a class="btn btn-link" href="about-party.html">About Us</a>
+         <a class="btn btn-link" href="contact.html">Contact Us</a>
+         <a class="btn btn-link" href="party-constitution.html">Mission & Vision</a>
+         <a class="btn btn-link" href="our-leaders.html">Leadership</a>
+         <a class="btn btn-link" href="join-wpi.html">Become a Volunteer</a>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h3 class="text-light mb-4">Media</h3>
+         <a class="btn btn-link" href="press-releases.html">Press Releases</a>
+         <a class="btn btn-link" href="interview-articles.html">Press Conference Archive</a>
+         <a class="btn btn-link" href="photo-gallery.html">Photos</a>
+         <a class="btn btn-link" href="video-gallery.html">Videos</a>
+         <a class="btn btn-link" href="speeches.html">Speeches</a>
+       </div>
+     </div>
+   </div>
+   <div class="container-fluid copyright">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+           &copy; <a href="#">WPI</a>, All Right Reserved.
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Footer End -->
+
+ <!-- Back to Top -->
+ <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+   ><i class="bi bi-arrow-up"></i
+ ></a>
+
+ <!-- JavaScript Libraries -->
+ <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/counterup/counterup.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ <script src="lib/tempusdominus/js/moment.min.js"></script>
+ <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+ <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+ <script src="js/counter.js"></script>
+ <script src="lib/magnific-popup/isotope.pkgd.js"></script>
+ <script src="lib/magnific-popup/jquery.magnific-popup.js"></script>
+
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+</body>
+
+</html>
